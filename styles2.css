@@ -1,0 +1,33 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.result-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.result-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.result-item {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.result-item span {
+    font-weight: bold;
+}
+
