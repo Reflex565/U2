@@ -1,3 +1,4 @@
+/* General reset and box-sizing */
 body, h1, h2, h3, p, ul, li, table {
     margin: 0;
     padding: 0;
@@ -5,7 +6,6 @@ body, h1, h2, h3, p, ul, li, table {
 }
 
 body {
-   
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
@@ -25,6 +25,7 @@ header h1 {
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center; /* Centrar los enlaces del nav */
 }
 
 nav ul li {
@@ -48,6 +49,7 @@ main {
 
 section {
     margin-bottom: 20px;
+    text-align: center; /* Centrar el contenido de las secciones */
 }
 
 .button {
@@ -66,7 +68,7 @@ section {
 }
 
 .responsive-image {
-    max-width: 100%;
+    max-width: 40%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -100,54 +102,51 @@ th {
 }
 
 .form-container {
-    display: flex; /* Activa Flexbox */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-
 .form-group {
-    margin-bottom: 15px; /* Espacio entre grupos de formulario */
+    margin-bottom: 15px;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 5px; /* Espacio debajo de las etiquetas */
-    color: #555; /* Color de las etiquetas */
+    margin-bottom: 5px;
+    color: #555;
     font-weight: bold;
 }
 
 .form-group input,
 .form-group select {
-    width: 100%; /* Ancho completo */
-    padding: 10px; /* Espacio interno */
-    border: 1px solid #ddd; /* Borde ligero */
-    border-radius: 5px; /* Bordes redondeados */
-    box-sizing: border-box; /* Incluye padding en el ancho */
-    transition: border-color 0.3s; /* Transición suave al enfocar */
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
 }
 
 .form-group input:focus,
 .form-group select:focus {
-    border-color: #5b9bd5; /* Color del borde al enfocar */
-    outline: none; /* Sin borde de enfoque */
+    border-color: #5b9bd5;
+    outline: none;
 }
 
 .form-group button {
-    width: 100%; /* Botón de ancho completo */
-    padding: 10px; /* Espacio interno */
-    background-color: #5b9bd5; /* Color de fondo */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    color: white; /* Color del texto */
-    font-size: 16px; /* Tamaño del texto */
-    cursor: pointer; /* Cursor de mano */
-    transition: background-color 0.3s; /* Transición suave al pasar el ratón */
+    width: 100%;
+    padding: 10px;
+    background-color: #5b9bd5;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .form-group button:hover {
-    background-color: #4a89c7; /* Color de fondo al pasar el ratón */
+    background-color: #4a89c7;
 }
-
-

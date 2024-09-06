@@ -1,155 +1,155 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi página personalizada</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        /* Estilos adicionales para manejar el contenido cargado */
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar-->
+        <div class="border-end bg-gradient" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-gradient">Menu desplegable</div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#" data-page="/Unidad 1/index.html">Equipazo los Tilines</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" onclick="window.open('https://sites.google.com/itesco.edu.mx/evolucion-de--programacion-web/inicio', '_blank');">Linea del Tiempo</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#" data-page="LineaT.html">Cuestionario</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#" data-page="Mi primera pagina.html">Mi primera página simple</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#" data-page="Taller1.html">Practica de etiquetas</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#" data-page="Sobre mi.html">Información personal</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#" data-page="pagina5.html">Profile</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#" data-page="pagina6.html">Status</a>
+            </div>
+        </div>
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">
+            <!-- Top navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-gradient">
+                <div class="container-fluid">
+                    <button class="btn btn-primary" id="sidebarToggle"><span class="navbar-toggler-icon"></span></button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                            <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Page content-->
+            <div class="container-fluid" id="contenido">
+                <h1 class="mt-4">Programación web</h1><br>
+                <h2 class="mt-3">Hecho por Alfredo De Jesus Garcia Suarez</h2>
+                <br> <br>
+                <img class="responsive-image" src="servicios-de-programacion-web-a-medida.jpg" alt="">
+            </div>
+        </div>
+    </div>
 
-  <body align="center">
-    <header>
-      <h1>Alfredo De Jesus Garcia Suarez</h1>
-      <nav>
-        <ul>
-          <li><a href="#descarga">Descargar Archivo</a></li>
-          <li><a href="#imagen">Ver Imagen</a></li>
-          <li><a href="#tabla">Ver Tabla de Escuelas</a></li>
-          <li><a href="#frame">Ver Frame</a></li>
-        </ul>
-      </nav>
-    </header>
+<script src="js/scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Obtener todos los enlaces del sidebar
+        const enlaces = document.querySelectorAll('.list-group-item');
 
-    <main>
-      <section id="descarga">
-        <h2>Descarga un Archivo</h2>
-        <a
-          href="DISEñO-DE-PAGINAS-CON-HTML.pdf"
-          download
-          class="button"
-          >Haga clic <i class="fas fa-acquisitions-incorporated"></i
-        ></a>
-      </section>
+        // Añadir evento de clic a cada enlace
+        enlaces.forEach(enlace => {
+            enlace.addEventListener('click', function(event) {
+                event.preventDefault(); // Evitar recargar la página
+                const pagina = this.getAttribute('data-page'); // Obtener la página a cargar
+                const pagina2 = this.getAttribute('href'); // Obtener la página a cargar
+                if (pagina === null){return ;}
+                console.log(pagina);
+                cargarContenido(pagina); // Cargar el contenido
+            });
+        });
 
-      <br />
-      <br />
-      <br />
+        // Función para cargar el contenido
+        function cargarContenido(pagina) {
+            fetch(pagina)
+                .then(response => response.text())
+                .then(data => {
+                    const contenido = document.getElementById('contenido');
+                    if (contenido) {
+                        // Crear un contenedor temporal para manipular el contenido HTML
+                        const tempDiv = document.createElement('div');
+                        tempDiv.innerHTML = data;
 
-      <section id="imagen">
-        <h2>Imagen de Ejemplo</h2>
-        <img
-          src="Alfred xd.jpg"
-          alt="Imagen de Ejemplo"
-          class="responsive-image"
-        />
-      </section>
-      <br />
-      <br />
-      <br />
+                        // Obtener el contenido del body o del contenedor temporal completo
+                        const bodyContent = tempDiv.querySelector('body') || tempDiv;
 
-      <section id="tabla">
-        <h2>Vida Académica</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>No.</th>
-              <th>Escuela</th>
-              <th>Periodo</th>
-              <th>Año de Egreso</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Rodolfo Mendez de la Peña</td>
-              <td>2006-2012</td>
-              <td>2012</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Escuela Secundaria General No. 6</td>
-              <td>2015-2018</td>
-              <td>2018</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Centro de Estudios Tecnologicos Industrial y de Servicios</td>
-              <td>2018-2021</td>
-              <td>2021</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>Instituto Tecnologico Superior de Coatzacoalcos</td>
-              <td>2021-2025</td>
-              <td>En curso</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+                        // Aplicar estilos del body del HTML cargado
+                        const bodyAttributes = bodyContent.attributes;
+                        Array.from(bodyAttributes).forEach(attr => {
+                            if (attr.name === 'bgcolor') {
+                                document.body.style.backgroundColor = `#${attr.value}`;
+                            } else if (attr.name === 'background') {
+                                document.body.style.backgroundImage = `url(${attr.value})`;
+                            } else if (attr.name === 'leftmargin') {
+                                document.body.style.marginLeft = `${attr.value}px`;
+                            } else if (attr.name === 'topmargin') {
+                                document.body.style.marginTop = `${attr.value}px`;
+                            } else if (attr.name === 'marginwidth') {
+                                document.body.style.marginLeft = `${attr.value}px`;
+                                document.body.style.marginRight = `${attr.value}px`;
+                            } else if (attr.name === 'marginheight') {
+                                document.body.style.marginTop = `${attr.value}px`;
+                                document.body.style.marginBottom = `${attr.value}px`;
+                            }
+                        });
 
-      <br />
-      <br />
-      <br />
+                        if (bodyContent) {
+                            // Reemplazar el contenido con los elementos dentro del body cargado
+                            contenido.innerHTML = bodyContent.innerHTML;
 
-      <section id="frame">
-        <h2>Contenido en un Frame</h2>
-        <iframe
-          src="DISEñO-DE-PAGINAS-CON-HTML.pdf"
-          frameborder="0"
-          class="frame"
-        ></iframe>
-      </section>
+                            // Re-inicializar el contenido dinámico si es necesario
+                            if (typeof initDynamicContent === 'function') {
+                                initDynamicContent();
+                            }
+                        } else {
+                            console.error('No se encontró contenido en el archivo HTML cargado.');
+                        }
+                    } else {
+                        console.error('No se encontró el elemento con ID "contenido".');
+                    }
+                })
+                .catch(error => console.error('Error al cargar el contenido:', error));
+        }
+    });
 
-      <br />
-      <br />
-      <br />
+    // Función para inicializar contenido dinámico (por ejemplo, marquees)
+    function initDynamicContent() {
+        // Aquí puedes añadir cualquier inicialización que necesites para el contenido cargado
+        console.log('Contenido dinámico inicializado.');
+    }
+</script>
 
-      <div class="form-container">
-        <form id="myForm" action="result.html" method="get">
-          <h2>Formulario</h2>
-          <div class="form-group">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div class="form-group">
-            <label for="address">Dirección:</label>
-            <input type="text" id="address" name="address" required />
-          </div>
-          <div class="form-group">
-            <label for="phone">Teléfono:</label>
-            <input type="tel" id="phone" name="phone" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Correo:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form-group">
-            <label for="education">Escolaridad:</label>
-            <select id="education" name="education" required>
-              <option value="">Selecciona una opción</option>
-              <option value="Primaria">Primaria</option>
-              <option value="Secundaria">Secundaria</option>
-              <option value="Preparatoria">Preparatoria</option>
-              <option value="Universidad">Universidad</option>
-              <option value="Postgrado">Postgrado</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="gender">Sexo:</label>
-            <select id="gender" name="gender" required>
-              <option value="">Selecciona una opción</option>
-              <option value="Masculino">Masculino</option>
-              <option value="Femenino">Femenino</option>
-              <option value="Otro">Otro</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <button type="submit">Enviar</button>
-          </div>
-        </form>
-      </div>
-      <br />
-      <br />
-    </main>
-  </body>
+</body>
 </html>
+

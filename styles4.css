@@ -1,0 +1,29 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+}
+header{
+    background-color: #99CC99; /* Color de fondo */
+    height: 100vh;
+}
+/* Styles for text */
+p {
+    color: #006691; /* Color del texto */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+pre {
+    font-size: 16px; /* Tamaño de fuente para texto preformateado */
+    padding: 10px; /* Espacio interno */
+    border: 1px solid #ddd; /* Borde del bloque pre */
+    overflow: auto; /* Manejo de desbordamiento */
+}
+
+/* Horizontal line styles */
+hr {
+    border: 0;
+    border-top: 10px solid #006691; /* Color y grosor del borde superior */
+    width: 50%; /* Ancho de la línea horizontal */
+    margin: 20px 0; /* Espacio arriba y abajo de la línea horizontal */
+    align: left; /* Alineación de la línea horizontal */
+}

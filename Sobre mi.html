@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi página personalizada</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body >
+    <header>
+      <h1>Alfredo De Jesus Garcia Suarez</h1>
+      <nav>
+        <ul>
+          <li><a href="#descarga">Descargar Archivo</a></li>
+          <li><a href="#imagen">Ver Imagen</a></li>
+          <li><a href="#tabla">Ver Tabla de Escuelas</a></li>
+          <li><a href="#frame">Ver Frame</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="descarga">
+        <h2 >Descarga un Archivo</h2>
+        <br>
+        <br>
+        <a
+          href="DISEñO-DE-PAGINAS-CON-HTML.pdf"
+          download
+          class="button"
+          >Haga clic <i class="fas fa-acquisitions-incorporated"></i
+        ></a>
+      </section>
+
+      <br />
+      <br />
+      <br />
+
+      <section id="imagen">
+        <h2 id="xd">Imagen de Ejemplo</h2>
+        <br>
+        <br>
+        <img
+          src="Alfred xd.jpg"
+          alt="Imagen de Ejemplo"
+          class="responsive-image"
+        />
+      </section>
+      <br />
+      <br />
+      <br />
+
+      <section id="tabla">
+        <h2 id="xd">Vida Académica</h2>
+        <br>
+        <br>
+        <table>
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>Escuela</th>
+              <th>Periodo</th>
+              <th>Año de Egreso</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Rodolfo Mendez de la Peña</td>
+              <td>2006-2012</td>
+              <td>2012</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Escuela Secundaria General No. 6</td>
+              <td>2015-2018</td>
+              <td>2018</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Centro de Estudios Tecnologicos Industrial y de Servicios</td>
+              <td>2018-2021</td>
+              <td>2021</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Instituto Tecnologico Superior de Coatzacoalcos</td>
+              <td>2021-2025</td>
+              <td>En curso</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <br />
+      <br />
+      <br />
+
+      <section id="frame">
+        <h2 id="xd">Contenido en un Frame</h2>
+        <iframe
+          src="DISEñO-DE-PAGINAS-CON-HTML.pdf"
+          frameborder="0"
+          class="frame"
+        ></iframe>
+      </section>
+
+      <br />
+      <br />
+      <br />
+
+      <div class="form-container">
+        <form id="myForm" action="result.html" method="get">
+          <h2>Formulario</h2>
+          <div class="form-group">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="address">Dirección:</label>
+            <input type="text" id="address" name="address" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Correo:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="education">Escolaridad:</label>
+            <select id="education" name="education" required>
+              <option value="">Selecciona una opción</option>
+              <option value="Primaria">Primaria</option>
+              <option value="Secundaria">Secundaria</option>
+              <option value="Preparatoria">Preparatoria</option>
+              <option value="Universidad">Universidad</option>
+              <option value="Postgrado">Postgrado</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="gender">Sexo:</label>
+            <select id="gender" name="gender" required>
+              <option value="">Selecciona una opción</option>
+              <option value="Masculino">Masculino</option>
+              <option value="Femenino">Femenino</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
+      <br />
+      <br />
+    </main>
+  </body>
+</html>
